@@ -15,7 +15,7 @@ client = LINE()
 #nadya = LINE("TOKEN KAMU")
 #nadya = LINE("Email","Password")
 client.log("Auth Token : " + str(client.authToken))
-channelToken = nadya.getChannelResult()
+channelToken = client.getChannelResult()
 client.log("Channel Token : " + str(channelToken))
 
 helpMessage =""" ─┅═✥WIB SelfBot✥═┅─
