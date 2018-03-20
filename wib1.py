@@ -65,12 +65,12 @@ settings = json.load(settingsOpen)
 
 
 myProfile = {
-	"displayName": "",
+        "displayName": "",
 	"statusMessage": "",
 	"pictureStatus": ""
-  "cyduk":{},
-  "point":{},
-  "sidermem":{}
+        "cyduk":{},
+        "point":{},
+        "sidermem":{}
 }
 
 myProfile["displayName"] = clientProfile.displayName
