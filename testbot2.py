@@ -348,7 +348,7 @@ def lineBot(op):
             if settings["autoLeave"] == True:
                 nadya.leaveRoom(op.param1)
         if op.type == 17:
-            if mid in op.param3:
+            if nadya in op.param3:
                 if Setmain["RAautojoin"] == True:
                     if Setmain["RAbatas"]["on"] == True:
                         G = nadya.getGroup(op.param1)
