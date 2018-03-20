@@ -346,8 +346,8 @@ def lineBot(op):
         if op.type == 17:
             print ("[ 17 ] WELCOME")
             if settings["Welcome"] == True:
-            ginfo = cl.getGroup(op.param1)
-            contact = cl.getContact(op.param2)
+            ginfo = nadya.getGroup(op.param1)
+            contact = nadya.getContact(op.param2)
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             nadya.sendMessage(c)
