@@ -1,18 +1,22 @@
 # -*- coding: utf-8 -*-
-import linepy
+
 from linepy import *
-import json, time, random, tempfile, os, sys
+from datetime import datetime
+from time import sleep
+from bs4 import BeautifulSoup
+from humanfriendly import format_timespan, format_size, format_number, format_length
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse
 from gtts import gTTS
 from googletrans import Translator
+#==============================================================================#
+botStart = time.time()
 
-#client = LineClient(authToken='')
-#client = LineClient() Untuk Login Lewat Qr
-client = LineClient(id='corazoncz2@hotmail.com', passwd='neng14541')
-#client = LineClient(authToken='Token Mu') Untuk Login Via Token
+client = LINE()
+#nadya = LINE("TOKEN KAMU")
+#nadya = LINE("Email","Password")
 client.log("Auth Token : " + str(client.authToken))
-
-channel = LineChannel(client)
-client.log("Channel Access Token : " + str(channel.channelAccessToken))
+channelToken = nadya.getChannelResult()
+client.log("Channel Token : " + str(channelToken))
 
 helpMessage =""" ─┅═✥WIB SelfBot✥═┅─
 
